@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lingxuan Wu</title>
+  <title>Personal Page of Lingxuan Wu</title>
 
   <style>
     :root {
@@ -11,7 +11,6 @@
       --muted: #5f6c7b;
       --line: #d8dee9;
       --blue: #1f5fbf;
-      --blue-light: #e8f0ff;
       --card: #ffffff;
     }
 
@@ -56,20 +55,6 @@
       font-size: 17px;
       max-width: 830px;
       margin: 0 0 14px;
-    }
-
-    .tags {
-      margin-top: 20px;
-    }
-
-    .tag {
-      display: inline-block;
-      margin: 6px 6px 0 0;
-      padding: 6px 12px;
-      border-radius: 999px;
-      background: var(--blue-light);
-      color: #16458c;
-      font-size: 14px;
     }
 
     .nav {
@@ -138,16 +123,19 @@
       font-style: italic;
     }
 
-    .small {
-      color: var(--muted);
-      font-size: 15px;
+    .contact-table {
+      border-collapse: collapse;
+      margin-top: 8px;
     }
 
-    .footer {
+    .contact-table td {
+      padding: 2px 8px 2px 0;
+      vertical-align: top;
+    }
+
+    .contact-table td:first-child {
       color: var(--muted);
-      font-size: 14px;
-      text-align: center;
-      margin-top: 34px;
+      white-space: nowrap;
     }
 
     @media (max-width: 700px) {
@@ -202,7 +190,6 @@
 
     <div class="grid">
 
-
       <section class="card" id="preprints">
         <h2>Preprints</h2>
         <ul>
@@ -234,15 +221,18 @@
 
       <section class="card" id="contact">
         <h2>Contact</h2>
-        <p>
-          Email: lingxuan.wu [at] csu [dot] edu [dot] cn, lingxuan.wu [at] upc [dot] edu
-        </p>
+        <table class="contact-table">
+          <tr>
+            <td>Email:</td>
+            <td>lingxuan.wu [at] csu [dot] edu [dot] cn</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>lingxuan.wu [at] upc [dot] edu</td>
+          </tr>
+        </table>
       </section>
 
-    </div>
-
-    <div class="footer">
-      Last updated: May 2026
     </div>
 
   </main>
