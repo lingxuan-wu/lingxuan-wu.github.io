@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Page of Lingxuan Wu(吴凌轩)</title>
+  <title>Personal Page of Lingxuan Wu (吴凌轩)</title>
 
   <style>
     :root {
@@ -12,7 +12,6 @@
       --line: #d8dee9;
       --blue: #1f5fbf;
       --blue-soft: #dbeafe;
-      --blue-pale: #f3f7ff;
       --card: #ffffff;
     }
 
@@ -34,49 +33,30 @@
     }
 
     .hero {
-      position: relative;
-      overflow: hidden;
-      background: rgba(255, 255, 255, 0.94);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 251, 255, 0.96));
       border: 1px solid var(--line);
+      border-top: 6px solid var(--blue);
       border-radius: 24px;
-      padding: 34px 42px;
+      padding: 34px 42px 30px;
       box-shadow: 0 20px 48px rgba(31, 95, 191, 0.10);
     }
 
-    .chinese-name {
-  font-size: 20px;
-  color: var(--muted);
-  margin: -2px 0 10px;
-  letter-spacing: 2px;
-}
-    
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 6px;
-      background: linear-gradient(90deg, #1f5fbf, #7aa7ff, #c7ddff);
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      top: 26px;
-      right: 34px;
-      width: 120px;
-      height: 120px;
-      background: radial-gradient(circle, rgba(31, 95, 191, 0.12), rgba(31, 95, 191, 0));
-      border-radius: 50%;
-      pointer-events: none;
+    .name-block {
+      margin-bottom: 12px;
     }
 
     h1 {
       font-size: 40px;
       font-weight: normal;
-      margin: 0 0 6px;
+      margin: 0;
       letter-spacing: 0.2px;
+    }
+
+    .chinese-name {
+      font-size: 21px;
+      color: var(--muted);
+      letter-spacing: 3px;
+      margin-top: 2px;
     }
 
     .subtitle {
@@ -189,12 +169,12 @@
         padding: 30px 24px;
       }
 
-      .hero::after {
-        display: none;
-      }
-
       h1 {
         font-size: 34px;
+      }
+
+      .chinese-name {
+        font-size: 19px;
       }
 
       .card {
@@ -212,12 +192,11 @@
   <main class="page">
 
     <section class="hero">
-      <h1>Lingxuan Wu</h1>
-
-    <div class="chinese-name">
-       吴凌轩
+      <div class="name-block">
+        <h1>Lingxuan Wu</h1>
+        <div class="chinese-name">吴凌轩</div>
       </div>
-      
+
       <div class="subtitle">
         PhD student in Mathematics
       </div>
