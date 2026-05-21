@@ -42,7 +42,10 @@
     }
 
     .name-block {
-      margin-bottom: 12px;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 10px;
     }
 
     h1 {
@@ -53,10 +56,10 @@
     }
 
     .chinese-name {
-      font-size: 21px;
-      color: var(--muted);
-      letter-spacing: 3px;
-      margin-top: 2px;
+      font-size: 20px;
+      color: #6b7280;
+      letter-spacing: 2px;
+      white-space: nowrap;
     }
 
     .subtitle {
@@ -169,12 +172,19 @@
         padding: 30px 24px;
       }
 
+      .name-block {
+        display: block;
+      }
+
       h1 {
         font-size: 34px;
       }
 
       .chinese-name {
-        font-size: 19px;
+        display: block;
+        font-size: 18px;
+        margin-top: 2px;
+        letter-spacing: 2px;
       }
 
       .card {
@@ -194,7 +204,7 @@
     <section class="hero">
       <div class="name-block">
         <h1>Lingxuan Wu</h1>
-        <div class="chinese-name">吴凌轩</div>
+        <span class="chinese-name">吴凌轩</span>
       </div>
 
       <div class="subtitle">
